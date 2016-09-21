@@ -53,6 +53,13 @@ a {
   }
 }
 
+.visible-sm {
+  display: block;
+}
+.visible-lg {
+  display: none;
+}
+
 header, section {
   padding: 2.5em;
   margin: 0;
@@ -80,16 +87,8 @@ header, section {
   }
 
   .align-right {
-    display: block;
-    width: 25%;
-    float: right;
-
     img {
       width: 100%;
-    }
-
-    & + * {
-      width: 70%;
     }
   }
 }
@@ -107,5 +106,29 @@ header {
 
 #ghg-video {
   width: 100%;
-  height: 400px;
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .visible-sm {
+    display: none;
+  }
+  .visible-lg {
+    display: block;
+  }
+
+  header, section {
+    .align-right {
+      width: 25%;
+      float: right;
+
+      & + * {
+        width: 70%;
+      }
+    }
+  }
+
+  #ghg-video {
+    height: 400px;
+  }
 }
