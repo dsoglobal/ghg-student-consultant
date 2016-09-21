@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <title>Student Consultant - Web Design &amp; Development | DSO</title>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
   </head>
   <body>
 
     <!-- Header -->
-    <header></header>
+    <header>
+      <div class="content">
+        <a class="btn align-right" href="#apply">Apply Now</a>
+
+        <h1>Student Consultant &mdash; Web Design</h1>
+        <p>October - December 2016 | Stanford, CA</p>
+      </div>
+    </header>
 
     <!-- Job Description -->
-    <main>
-      <h1>Student Consultant &mdash; Web Design &amp; Development</h1>
-      <div>October - December 2016 | Stanford</div>
-
-      <hr />
-
-      <div class="jd-section">
+    <section id="client">
+      <div class="content">
         <h2>About the Client</h2>
-        [Embed video: https://www.youtube.com/watch?v=yi9qSXyxGv0]
+        
+        <iframe id="ghg-video" src="https://www.youtube.com/embed/yi9qSXyxGv0" frameborder="0" allowfullscreen></iframe>
 
         <p>GirlsHelpingGirls is a nonprofit organization that is dedicated to raising the status of women through education. They accomplish this through a three-pronged holistic approach:</p>
 
@@ -34,11 +38,13 @@
 
         <p>GHG has been able to make this holistic approach a reality by building two schools in Jamaica, providing teacher training in Afghanistan, and by creating scholarships for needy girls in South Africa, Jamaica, and Kenya.</p>
       </div>
+    </section>
 
-      <div class="jd-section">
+    <section id="project">
+      <div class="content">
         <h2>About the Project</h2>
 
-        <p>GirlsHelpingGirls has partnered with Development Solutions Organization (DSO) to redesign GHG's website. The primary goals of the website update are to:</p>
+        <p>GirlsHelpingGirls has partnered with Development Solutions Organization (DSO), a volunteer-driven nonprofit consultancy, to redesign the <a href="http://girlshelpinggirls.ca/">GHG website</a>. The primary goals of the website update are to:</p>
 
         <ul>
           <li>Convey a more modern, professional yet philanthropic brand image to attract higher value donations</li>
@@ -47,10 +53,12 @@
           <li>Make the website SEO-optimized and mobile-friendly</li>
         </ul>
 
-        <p>The project will last from October to December 2016, culminating in a final presentation to key stakeholders.</p>
+        <p>The project will last from October to December 2016, culminating in a final presentation to key internal and external stakeholders.</p>
       </div>
+    </section>
 
-      <div class="jd-section">
+    <section id="role">
+      <div class="content">
         <h2>Your Role</h2>
 
         <p>As a DSO consultant, you will be part of a small, highly collaborative team of student volunteers from Stanford and professional volunteers from the Bay Area's top companies.</p>
@@ -72,8 +80,10 @@
           <li>Apply the technical skills you've learned in class to make a global impact</li>
         </ul>
       </div>
+    </section>
 
-      <div class="jd-section">
+    <section id="requirements">
+      <div class="content">
         <h2>Requirements</h2>
 
         <ul>
@@ -85,26 +95,29 @@
           <li>You can contribute 3-5 volunteer hours per week throughout Fall Quarter</li>
         </ul>
       </div>
+    </section>
 
-      <div class="jd-section">
+    <section id="dso">
+      <div class="content">        
         <h2>About DSO</h2>
+
+        <a class="align-right" href="http://www.dsoglobal.org/"><img src="img/dso_logo.png" /></a>
 
         <p>Development Solutions Organization is a volunteer-driven consultancy that partners with nonprofits and social enterprises to address some of world's biggest challenges in international development. Our team is comprised of professional volunteers from top companies (McKinsey, Box, Uber, Microsoft) and student volunteers from prestigious universities (Stanford, Carnegie Mellon, Georgetown). Notable past partners include Kiva, Ashoka, Samasource, and Made by Survivors.</p>
 
         <p>Joining DSO grants lifetime access to our projects, partners, and &mdash; most importantly &mdash; our network of talented people who are passionate about international development.</p>
 
-        <p>Learn more at <a href="http://www.dsoglobal.org/">http://www.dsoglobal.org/</a>.</p>
+        <p>Learn more at <a href="http://www.dsoglobal.org/">http://www.dsoglobal.org</a>.</p>
       </div>
+    </section>
 
-      <div class="jd-section">
+    <section id="apply">
+      <div class="content">
         <h2>How to Apply</h2>
 
         <p>Email your resume to <a href="mailto:stanfordinfo@dsoglobal.org">stanfordinfo@dsoglobal.org</a> with the subject line “GHG Student Consultant” and a few sentences on why you're interested.</p>
       </div>
-    </main>
-
-    <!-- Footer -->
-    <footer></footer>
+    </section>
 
   </body>
 </html>
